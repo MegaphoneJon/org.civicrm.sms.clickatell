@@ -285,8 +285,10 @@ class org_civicrm_sms_clickatell extends CRM_SMS_Provider {
 	     		  // ?
 	     		
 	     		}else{
-	     		
-	     		
+	     			// Set the default to US/Canada until country names to ids map correctly
+	     			$phone_system_country_code = "1"; 
+	     			$phone_number_expected_length_without_code = 10; 
+	     			$do_country_specific_validation = true;
 	     		}
 	     
 	     }
